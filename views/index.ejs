@@ -1,0 +1,22 @@
+<h3>Bienvenidos a
+      <%= title %>
+  </h3>
+<p>
+  la pagina donde puede registrar sus reclamos...
+</p>
+<table>
+  <tr>
+    <td>  </td>
+    <td>tiporeclamo</td>
+    <td>observacion</td>
+    <td>fechareclamo</td>
+  </tr>
+  <% var i; for(i<0;i<reclamo.length;i++) { %>
+    <tr>
+    <td><%= i %></td>
+    <td><%= reclamo[i].tiporeclamo %></td>
+    <td><%= reclamo[i].observacion %></td>
+    <td><%= reclamo[i].fechareclamo %></td>
+    </tr>
+    <% } %>
+</table>
