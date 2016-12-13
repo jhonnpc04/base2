@@ -1,10 +1,10 @@
 <h2>registroReclamo</h2>
 <form class="nav-var" action="guardarReclamo" method="post">
 <label for="tiporeclamo">Tiporeclamo</label>
-<select class="list" name="tiporeclamo" id="tiporeclamo">
-  <option value="option">Odeco</option>
-  <option value="option1">option1</option>
-  <option value="option2">option2</option>
+<select class="list" name="reclamo[tiporeclamo]" id="tiporeclamo">
+  <option value="<%= reclamo.tiporeclamo %>">Odeco</option>
+  <option value="option1">Proceso1</option>
+  <option value="option2">Servicio</option>
   <option value="option3">option3</option>
 </select>
 <div class="nav-var">
@@ -13,7 +13,7 @@
 </div>
 <div class="nav-var">
   <label for="fecha">Fecha</label>
-  <input type="text" id="fechareclamo" name="reclamo[fechareclamo]" value="<%= reclamo.fechareclamo %>">
+  <input type="text" id="fecha" name="reclamo[fecha]" value="<%= reclamo.fecha %>">
 </div>
 <div class="nav-var">
   <input type="submit" name="envio" value="Registrar Reclamo">

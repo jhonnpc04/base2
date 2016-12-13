@@ -1,22 +1,17 @@
-<h3>Bienvenidos a
-      <%= title %>
-  </h3>
-<p>
-  la pagina donde puede registrar sus reclamos...
-</p>
-<table>
-  <tr>
-    <td>  </td>
-    <td>tiporeclamo</td>
-    <td>observacion</td>
-    <td>fechareclamo</td>
-  </tr>
-  <% var i; for(i<0;i<reclamo.length;i++) { %>
-    <tr>
-    <td><%= i %></td>
-    <td><%= reclamo[i].tiporeclamo %></td>
-    <td><%= reclamo[i].observacion %></td>
-    <td><%= reclamo[i].fechareclamo %></td>
+<h3>Bienvenido a  <%= title %></h3>
+<table border="1">
+   <tr>
+       <td>id</td>
+       <td>Tipo Reclamo</td>
+       <td>Observacion</td>
+       <td>Fecha</td>
     </tr>
-    <% } %>
+<% var i; for(i=0; i< reclamos.length; i++) { %>
+   <tr>
+       <td><%= i %></td>
+       <td><%= reclamos[i].tiporeclamo %></td>
+       <td><%= reclamos[i].observacion %></td>
+       <td><%= reclamos[i].fecha %></td>
+    </tr>
+<% } %>
 </table>

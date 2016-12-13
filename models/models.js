@@ -17,7 +17,7 @@ sequelize.sync().success (function(){
       reclamo.create({
         tiporeclamo: "Ejemplo Tipo Reclamo",
         observacion: "Ejemplo observacion",
-        fechareclamo: "01/01/2017"
+        fecha: "01/01/2017"
                 }).success(function(){
                   console.log("reclamo inicializa")
                 })
