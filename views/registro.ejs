@@ -1,11 +1,12 @@
 <h2>registroReclamo</h2>
 <form class="nav-var" action="guardarReclamo" method="post">
-<label for="tiporeclamo">Tiporeclamo</label>
-<select class="list" name="reclamo[tiporeclamo]" id="tiporeclamo">
-  <option value="<%= reclamo.tiporeclamo %>">Odeco</option>
-  <option value="option1">Proceso1</option>
-  <option value="option2">Servicio</option>
-  <option value="option3">option3</option>
+<label>Tipo de reclamo <span class="required"></span></label>
+
+<select name="reclamo[tiporeclamo]" id="tiporeclamo" value="<%= reclamo.tiporeclamo %>" class="field-select">
+  <option >Odeco</option>
+  <option >Proceso1</option>
+  <option >Servicio</option>
+  <option >option3</option>
 </select>
 <div class="nav-var">
   <label for="observaciones">Observaciones: </label>

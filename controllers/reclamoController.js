@@ -12,9 +12,9 @@ exports.pricipal = function(req, res, next) {
                     }
 
 exports.registro = function(req, res) {
-  var reclamo = {tiporeclamo:'odeco',
-                 observacion:'malservicio',
-                 fecha:'29/11/2016'}
+      var reclamo = {tiporeclamo:'odeco',
+                     observacion:'',
+                     fecha:''}
                       res.render('registro', {reclamo: reclamo });
                                         }
 exports.guardarReclamo = function(req, res){
